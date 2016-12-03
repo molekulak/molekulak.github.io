@@ -1,0 +1,65 @@
+body {
+    text-align: center;
+    background-color: hsl(0, 0%, 10%);
+}
+
+canvas {
+    background-color: hsl(0, 0%, 15%);
+    border: 2px solid hsl(0, 0%, 13%);
+}
+
+.name-input {
+    width: 300px;
+    text-align: center;
+    color: hsl(0, 0%, 60%);
+    outline: none;
+    padding: 0.5em;
+    background-color: hsl(0, 0%, 15%);
+    border: 1px solid hsl(0, 0%, 13%);
+}
+
+::-webkit-input-placeholder {
+  color: hsl(0, 0%, 40%);
+}
+
+::-moz-placeholder {
+  color: hsl(0, 0%, 40%);
+}
+
+:-ms-input-placeholder {
+  color: hsl(0, 0%, 40%);
+}
+
+:-moz-placeholder {
+  color: hsl(0, 0%, 40%);
+}
+
+.button {
+    outline: none;
+    color: hsl(0, 0%, 60%);
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    background-color: hsl(0, 0%, 15%);
+    border: 1px solid hsl(0, 0%, 13%);
+}
+
+.button:active {
+    background-color: hsl(0, 0%, 20%);
+}
+
+label, .difficulty {
+    color: hsl(0, 0%, 60%);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.difficulty {
+    width: 7em;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    outline: none;
+    background-color: hsl(0, 0%, 15%);
+    border: 1px solid hsl(0, 0%, 13%);
+}
