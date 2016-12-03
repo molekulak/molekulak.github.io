@@ -60,9 +60,9 @@ var molecule = (function () {
         
         var maxLength = 9;
         if (difficulty.value == 1)
-            maxLength = 4;
+            maxLength = 5;
         if (difficulty.value == 2)
-            maxLength = 6;
+            maxLength = 7;
         
         length = Math.floor(Math.random() * maxLength + 4);
         
@@ -76,10 +76,10 @@ var molecule = (function () {
             "metil": [],
             "propil": [],
             "szek-butil": [],
-            "tert-butil": []
+            "terc-butil": []
         };
         
-        for (var i = 1; i <= length - 2; i++) {
+        for (var i = 1; i < length - 1; i++) {
             for (var j = 0; j <= 1; j++) {
                 var chance = 0.3;
                 if (i == 1 && j == 0)
@@ -98,32 +98,32 @@ var molecule = (function () {
                             branch.name = "metil";
                             break;
                         case 1:
-                            if (i >= 2 && i <= length - 1)
+                            if (i >= 2 && i < length - 2)
                                 branch.name = "etil";
                             break;
                         case 2:
-                            if (i >= 3 && i <= length - 2)
+                            if (i >= 3 && i < length - 3)
                                 branch.name = "propil";
                             break;
                         case 3:
-                            if (i >= 4 && i <= length - 3)
+                            if (i >= 4 && i < length - 4)
                                 branch.name = "butil";
                             break;
                         case 4:
-                            if (i >= 2 && i <= length - 1)
+                            if (i >= 2 && i < length - 2)
                                 branch.name = "izopropil";
                             break;
                         case 5:
-                            if (i >= 3 && i <= length - 2)
+                            if (i >= 3 && i < length - 3)
                                 branch.name = "izobutil";
                             break;
                         case 6:
-                            if (i >= 3 && i <= length - 2)
+                            if (i >= 3 && i < length - 3)
                                 branch.name = "szek-butil";
                             break;
                         case 7:
-                            if (i >= 2 && i <= length - 1)
-                                branch.name = "tert-butil";
+                            if (i >= 2 && i < length - 2)
+                                branch.name = "terc-butil";
                             break;
                         case 8:
                             if (length > 5)
@@ -223,7 +223,7 @@ var molecule = (function () {
                 ctx.moveTo(startPos.x, startPos.y - 3.5 * size);
                 ctx.lineTo(startPos.x + size, startPos.y - 4.5 * size);
                 break;
-            case "tert-butil":
+            case "terc-butil":
                 ctx.lineTo(startPos.x, startPos.y - 2 * size);
                 ctx.lineTo(startPos.x - size, startPos.y - 2 * size);
                 ctx.lineTo(startPos.x + size, startPos.y - 2 * size);
