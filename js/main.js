@@ -1,5 +1,4 @@
 var molecule = (function () {
-
     var c, ctx;
     var size = 400;
 
@@ -11,8 +10,7 @@ var molecule = (function () {
     var bMoleculeSize = moleculeSize / 3 * 2;
     
     var names = ["met", "et", "prop", "but", "pent", "hex", "hept", "okt", "non", "dek", "undek", "dodek", "tridek"];
-    var count = ["", di", "tri", "tetra", "penta", "hex", "hept", "okt"]
-
+    var count = ["", "di", "tri", "tetra", "penta", "hex", "hept", "okt"];
     var check, nameInput, newMolecule, difficulty;
 
     function main() {
