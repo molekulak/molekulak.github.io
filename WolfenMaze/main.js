@@ -62,8 +62,8 @@ setInterval(() => {
     v = 2e4;
     for (x = 0; x < u; x++)
         for (y = 0; y < v; y++)
-        z = C(J, o(s(Math.cos(L + (x - h) / u * R), 1), 240 / y)), 
-        g(z) && g(z)!=3 || (c.fillStyle = ["#999", "#ddd", "#eee"][(z.x + z.y) % 3 | 0],
+        z = C(J, o(t(L + (x - h) / u * R), 240 / y)), 
+        g(z) && g(z)!=3 || (c.fillStyle = ["#999", "#bbb", "#ddd"][(z.x + z.y) % 3 | 0],
         g(z)-3||(c.fillStyle="#0f0"),
         c.fillRect(x++, h - u / y / 1e-2 / 2, 2, u / y / 1e-2), y = v);
     u = v = 33;
